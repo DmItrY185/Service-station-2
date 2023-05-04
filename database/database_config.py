@@ -1,9 +1,3 @@
-# host = 'localhost'
-# user = 'dima'
-# password = '8ibF^m11'
-# db_name = 'kursova'
-
-
 with open('database/config.txt') as file:
     data = file.readlines()
     data_list = []
