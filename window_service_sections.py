@@ -42,10 +42,9 @@ class ServiceSections:
         scrollbar_2.pack(side='bottom', fill='both')
 
         self.service_sections_listbox = Listbox(frame, width=60, height=10, yscrollcommand=scrollbar.set,
-                                                # width was 60
                                                 xscrollcommand=scrollbar_2.set, bg=bg, fg=fg,
                                                 selectbackground=active_color,
-                                                font=('Century Gothic', 18))  # font was 18
+                                                font=('Century Gothic', 18))
 
         self.service_sections_listbox.pack(side='left', fill='both')
 
@@ -175,7 +174,6 @@ class ServiceSections:
             return None
         inf = self.information.get()
         if inf == '':
-            # mes.showerror('Помилка', 'Ви не ввели дані для пошуку.')
             pass
 
         elif f == 'назвою':

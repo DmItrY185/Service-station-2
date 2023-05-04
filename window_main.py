@@ -107,9 +107,8 @@ class WindowMain:
         scrollbar_2_services.pack(side='bottom', fill='both')
 
         self.services_listbox = Listbox(frame_services, width=36, height=25, yscrollcommand=scrollbar_services.set,
-                                        # height was 19
                                         xscrollcommand=scrollbar_2_services.set, bg='#3b3b3b', fg='white',
-                                        selectbackground=self.active_color, font=('Century Gothic', 18))  # font was 18
+                                        selectbackground=self.active_color, font=('Century Gothic', 18))
 
         self.services_listbox.pack(side='left', fill='both')
 
@@ -139,7 +138,7 @@ class WindowMain:
                                            xscrollcommand=scrollbar_2_application.set, bg='#3b3b3b',
                                            fg='white',
                                            selectbackground=self.active_color,
-                                           font=('Century Gothic', 18))  # font was 18
+                                           font=('Century Gothic', 18))
 
         self.listbox_application.pack(side='left', fill='both')
 

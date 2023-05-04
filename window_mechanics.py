@@ -39,9 +39,9 @@ class Mechanics:
         scrollbar.pack(side='right', fill='y')
         scrollbar_2.pack(side='bottom', fill='both')
 
-        self.mechanics_listbox = Listbox(frame, width=60, height=10, yscrollcommand=scrollbar.set,  # width was 60
+        self.mechanics_listbox = Listbox(frame, width=60, height=10, yscrollcommand=scrollbar.set,
                                          xscrollcommand=scrollbar_2.set, bg=bg, fg=fg,
-                                         selectbackground=active_color, font=('Century Gothic', 18))  # font was 18
+                                         selectbackground=active_color, font=('Century Gothic', 18))
 
         self.mechanics_listbox.pack(side='left', fill='both')
 
@@ -210,7 +210,6 @@ class Mechanics:
             return None
         inf = self.information.get()
         if inf == '':
-            # mes.showerror('Помилка', 'Ви не ввели дані для пошуку.')
             pass
         elif f == 'ім\'ям':
             list_mechanics = sort('name_mechanic', inf)

@@ -111,5 +111,3 @@ except Exception as ex:
     root.mainloop()
 
     sys.exit()
-    # print('connection refused')
-    # print(ex)
